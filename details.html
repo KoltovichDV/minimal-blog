@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HotCoffee Make better coffee</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Finibus Bonorum et Malorum</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
         <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee">
-        <img src="./img/icons/search-line.svg" alt="">
-        <input type="text" id="search-line" placeholder="Search...">
+        <label>
+            <img src="./img/icons/search-line.svg" alt="search">
+            <input type="text" id="search-line" placeholder="Search...">
+        </label>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./index.html#articles">Articles</a>
@@ -26,10 +28,10 @@
     </header>
 
     <main>
-        <img src="./img/image1-big.png" alt="">
+        <img id="top" src="./img/image1-big.png" alt="">
         <h1>Finibus Bonorum et Malorum</h1>
         <p>Written by John doe</p>
-        <p>Monday May 20</p>
+        <time datetime="2020-05-20">Monday May 20</time>
         <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -56,9 +58,7 @@
             resultant pleasure?"
         </p>
 
-        <p>
-            <strong><em>Section 1.10.33 of "de Finibus Bonorum et Malorum"</em></strong>
-        </p>
+            <strong>Section 1.10.33 of "de Finibus Bonorum et Malorum"</strong>
 
         <p>
             "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
@@ -105,14 +105,18 @@
             voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
             ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
         </p>
-<button>
-    <img src="./img/icons/arrow-down-circle-fill-2.svg" alt="">
-</button>
+
+        <a href="#top">
+            <img src="./img/icons/arrow-down-circle-fill-2.svg" alt="Back to top">
+        </a>
+
     </main>
 
     <footer>
         <hr>
-        <p><strong>hotcoffee</strong> 2020 copyright all rights reserved</p>
+        <p>
+            <strong>hotcoffee</strong> 2020 copyright all rights reserved
+        </p>
         <nav>
             <a href="./blank.html" target="_blank"><img src="./img/icons/instagram-fill.svg" alt="instagram"></a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/twitter-fill.svg" alt="twitter"></a>
