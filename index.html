@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header class="header container">
+<body class="body">
+    <header class="header body__container"> 
         <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee">
+        <!-- Понимаю, что в макете логотип это просто шрифт, который используется во всём макете, но я логотип перевёл в svg специально, т.к. обычно так поступаю. За частую в лого уникальный шрифт из нейминга в бренд-буке и шаг вправо/влево считается побегом. Чтобы логотип не поломался при любом раскладе, сделал так -->
 
         <label>
             <img src="./img/icons/search-line.svg" alt="search">
@@ -35,21 +36,19 @@
     <main>
 
         <section class="marketing">
-            <div class="container marketing__container">
-                <div class="marketing__text-wraper">
-                    <h1 class="marketing__title">Make better coffee <img src="./img/coffee.png" alt="Hot cup of great coffee"></h1>
-                    <p class="marketing__text">why learn how to blog?</p>
-                </div>
-                <img class="marketing__img" src="./img/croods.png" alt="Our team is here to help">
+            <div class="body__container marketing__container">
+                <h1 class="marketing__title">Make better coffee</h1>
+                <p class="marketing__text">why learn how to blog?</p>
+                <!-- картинки в блоке реализовал в css, т.к. они не несут смысловую нагрузку и являются скорее дизайнерским элементом, чем каким то айспопером. Подробнее пояснил почему так решил в комментариях в css-коде -->
             </div>
         </section>
 
-        <section class="articles container">
+        <section class="articles body__container">
             <h2 id="articles">Articles</h2>
 
-            <article class="article__item article__item--top">
+            <article class="articles__item articles__item--top">
                 <img src="./img/image1.png" alt="Joyful John writes an article">
-                <div class="articles__content-wrapper">
+                <div class="articles__content-wrapper"> 
                     <h3>long established</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
                         when
@@ -59,8 +58,8 @@
                 </div>
             </article>
 
-            <div class="article__grid">
-                <article class="article__item">
+            <div class="articles__grid">
+                <article class="articles__item">
                     <img src="./img/image2.png" alt="Workplace of a journalist">
                     <h3>long established</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
@@ -70,7 +69,7 @@
                     <a href="./blank.html">Read more</a>
                 </article>
 
-                <article class="article__item">
+                <article class="articles__item">
                     <img src="./img/image3.png" alt="Discussion by project staff">
                     <h3>long established</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
@@ -80,7 +79,7 @@
                     <a href="./blank.html">Read more</a>
                 </article>
 
-                <article class="article__item">
+                <article class="articles__item">
                     <img src="./img/image4.png" alt="Work does not stop even in a cafe">
                     <h3>long established</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
@@ -91,7 +90,7 @@
                 </article>
 
                 <!-- в задании было условие, чтобы при добавлении новой карточки не развалился макет! Условие выполнено. Мы можем скопирвать и добавить код для новой карточки не развалив макет: 
-                    <article class="article__item">
+                    <article class="articles__item">
                     <img src="./img/image4.png" alt="">
                     <h3>long established</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -101,7 +100,7 @@
                     </article> -->
             </div>
 
-            <article class="article__item article__item--main">
+            <article class="articles__item articles__item--main">
                 <img src="./img/image5.png" alt="Workplace of a journalist">
                 <div class="articles__content-wrapper">
                     <h3>What is Lorem Ipsum?</h3>
@@ -122,7 +121,7 @@
 
     </main>
 
-    <footer class="container footer">
+    <footer class="body__container footer">
         <p>
             <strong>hotcoffee</strong> 2020 copyright all rights reserved
         </p>

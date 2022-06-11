@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
 } */
 
-.container {
+.body__container {
     max-width: 965px;
     margin-right: auto;
     margin-left: auto;
@@ -18,21 +18,54 @@
 
 
 .marketing {
+    display: flex;
+    height: 467px;
+    align-items: center;
+
     font-family: 'Inter', sans-serif;
+
     background-color: #FBFBFB;
 }
 
 .marketing__container {
-    display: flex;
+    width: 100%;
+    height: 323px;
+    padding-left: 60px;
+
+    background-image: url('../img/croods.png');
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 35px;
+    /* т.к. картинка с тремя чуваками дизайнерская и не несёт особого смысла (или я неуловил глубину мысли дизайнера. В реальном рабочем проекте я бы у него уточнил), то сделал её фоновой. Скринридер её пропустит.  */
 }
 
-.marketing__text-wraper {}
+.marketing__title {
+    width: 360px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 55px;
 
-.marketing__title {}
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: #000000;
 
-.marketing__text {}
+    background-image: url('../img/coffee.png');
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 76px;
+    /* т.к. картинка с чашкой кофе подкрепляющая фразу, как небольшой элемент дизайна (как я понял такой заменитель точки во фразе "Make better coffee"), то сделал её фоновой. Скринридер её пропустит. А то "делайте лучше кофе чашка кофе, как то нелепо будет в озвучке ИМХО  */
+}
 
-.marketing__img {}
+.marketing__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #4A5568;
+}
 
 
 .articles {
@@ -42,28 +75,37 @@
     gap: 43px;
 }
 
-.article__item {}
+.articles__item {}
 
-.article__item--top {
+.articles__item--top {
     display: flex;
     flex-direction: row-reverse;
+
+    border: 1px solid #E2E2E2;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    border-radius: 5px;
+
+    overflow: hidden;
+    /* скорее всего дизайнер забыл сделать симетричное скругление в блоках 5px. Я добавил, чтобы у картинки тоже скруглялись и смотрелась внутри блока. Если это была такая задумка, можно удалить overflow: hidden;, но без неё не целостно смотрится. */
+
+    background: #FFFFFF;
 }
 
-.article__item--top .articles__content-wrapper {}
+.articles__item--top .articles__content-wrapper {}
 
-.article__grid {
+.articles__grid {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     gap: 33px;
 }
 
-.article__item--main {
+.articles__item--main {
     display: flex;
     flex-direction: row-reverse;
     background-color: #F7FAFC;
 }
 
-.article__item--main .articles__content-wrapper {}
+.articles__item--main .articles__content-wrapper {}
 
 .articles__more-button {
     width: fit-content;
