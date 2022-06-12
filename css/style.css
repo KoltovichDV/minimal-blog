@@ -13,9 +13,28 @@
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-between;
+    margin-top: 37px;
+    margin-bottom: 27px;
+
     background-color: #FFFFFF;
 }
 
+.header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+    text-decoration: none;
+
+}
 
 .marketing {
     display: flex;
@@ -75,8 +94,6 @@
     gap: 43px;
 }
 
-.articles__item {}
-
 .articles__item--top {
     display: flex;
     flex-direction: row-reverse;
@@ -91,7 +108,62 @@
     background: #FFFFFF;
 }
 
-.articles__item--top .articles__content-wrapper {}
+.articles__content-wrapper {
+    padding-top: 41px;
+    padding-right: 74px;
+    padding-left: 54px;
+}
+
+.articles__title {
+    margin-top: 0;
+    color: #2D3748;
+}
+
+.articles__title--top {
+    margin-bottom: 27px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.articles__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #718096;
+
+}
+
+.articles__time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #718096;
+
+    float: left;
+}
+
+.articles__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #2D3748;
+
+    text-decoration: none;
+    float: right;
+}
+
 
 .articles__grid {
     display: grid;
@@ -105,7 +177,6 @@
     background-color: #F7FAFC;
 }
 
-.articles__item--main .articles__content-wrapper {}
 
 .articles__more-button {
     width: fit-content;
@@ -115,6 +186,50 @@
     background: #6B46C1;
     border: none;
     border-radius: 5px;
+}
+
+.details__container {
+    max-width: 765px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.details__written {
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+
+color: #2D3748;
+}
+
+.details__date {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+
+color: #718096;
+}
+
+.details__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #718096;
+}
+
+.details__text--italic {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #2D3748;
 }
 
 .footer {

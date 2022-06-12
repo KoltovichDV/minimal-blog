@@ -14,7 +14,7 @@
 </head>
 
 <body class="body">
-    <header class="header body__container"> 
+    <header class="header body__container">
         <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee">
         <!-- Понимаю, что в макете логотип это просто шрифт, который используется во всём макете, но я логотип перевёл в svg специально, т.к. обычно так поступаю. За частую в лого уникальный шрифт из нейминга в бренд-буке и шаг вправо/влево считается побегом. Чтобы логотип не поломался при любом раскладе, сделал так -->
 
@@ -23,9 +23,9 @@
             <input type="search" id="search-line" placeholder="Search...">
         </label>
 
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="#articles">Articles</a>
+        <nav class="header__navigation">
+            <a class="header__link" href="./index.html">Home</a>
+            <a class="header__link" href="#articles">Articles</a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/instagram-fill.svg" alt="instagram"></a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/twitter-fill.svg" alt="twitter"></a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/linkedin-box-fill.svg" alt="linkedin"></a>
@@ -48,13 +48,14 @@
 
             <article class="articles__item articles__item--top">
                 <img src="./img/image1.png" alt="Joyful John writes an article">
-                <div class="articles__content-wrapper"> 
-                    <h3>long established</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                <div class="articles__content-wrapper">
+                    <h3 class="articles__title articles__title--top">long established</h3>
+                    <p class="articles__text">It is a long established fact that a reader will be distracted by the
+                        readable content of a page
                         when
                         looking at its layout. The point of using Lorem Ipsum is that....</p>
-                    <time datetime="2020-05-20">May 20th 2020</time>
-                    <a href="./details.html">Read more</a>
+                    <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
+                    <a class="articles__link" href="./details.html">Read more</a>
                 </div>
             </article>
 
