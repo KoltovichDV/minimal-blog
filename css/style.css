@@ -94,6 +94,16 @@
     gap: 43px;
 }
 
+.articles__item {
+    background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
+border-radius: 5px;
+
+
+overflow: hidden;
+/* скорее всего дизайнер забыл сделать симетричное скругление в блоках 5px. Я добавил, чтобы у картинки тоже скруглялись и смотрелась внутри блока. Если это была такая задумка, можно удалить overflow: hidden;, но без неё не целостно смотрится. */
+}
+
 .articles__item--top {
     display: flex;
     flex-direction: row-reverse;
@@ -102,8 +112,6 @@
     box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
     border-radius: 5px;
 
-    overflow: hidden;
-    /* скорее всего дизайнер забыл сделать симетричное скругление в блоках 5px. Я добавил, чтобы у картинки тоже скруглялись и смотрелась внутри блока. Если это была такая задумка, можно удалить overflow: hidden;, но без неё не целостно смотрится. */
 
     background: #FFFFFF;
 }
@@ -198,20 +206,20 @@
 
 .details__written {
     font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
 
-color: #2D3748;
+    color: #2D3748;
 }
 
 .details__date {
     font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 
-color: #718096;
+    color: #718096;
 }
 
 .details__text {
@@ -233,6 +241,29 @@ color: #718096;
 }
 
 .footer {
+    border-top: 1px solid #E8E8E8;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.footer__container {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: #FFFFFF;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.footer__navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
