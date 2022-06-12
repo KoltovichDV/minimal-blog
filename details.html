@@ -16,7 +16,6 @@
 <body class="body">
     <header class="header body__container">
         <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee" width="102" height="24">
-        <!-- Понимаю, что в макете логотип это просто шрифт, который используется во всём макете, но я логотип перевёл в svg специально, т.к. обычно так поступаю. За частую в лого уникальный шрифт из нейминга в бренд-буке и шаг вправо/влево считается побегом. Чтобы логотип не поломался при любом раскладе, сделал так -->
 
         <label class="header__search-label">
             <img class="header__search-icon" src="./img/icons/search-line.svg" alt="search" width="17" height="17">
@@ -25,7 +24,7 @@
 
         <nav class="header__navigation">
             <a class="header__link" href="./index.html">Home</a>
-            <a class="header__link" href="#articles">Articles</a>
+            <a class="header__link" href="./index.html#articles">Articles</a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/instagram-fill.svg" alt="instagram"></a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/twitter-fill.svg" alt="twitter"></a>
             <a href="./blank.html" target="_blank"><img src="./img/icons/linkedin-box-fill.svg" alt="linkedin"></a>
@@ -148,6 +147,7 @@
         <a class="details__button" href="#top">
             <img src="./img/icons/arrow-down-circle-fill-2.svg" alt="Back to top">
         </a>
+        <!-- считаю, что данный элемент делается ссылкой (не кнопкой). Это просто отсылка вверх страницы. Городить из этого кнопку, а потом писать JS для того, что умеет из коробки браузер - косить траву в противогазе. Кнопкой реализовал в index.html нижний элемент, т.к. он открывает новые статьи, что логично сделать кнопкой -->
 
     </main>
 
