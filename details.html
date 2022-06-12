@@ -15,11 +15,12 @@
 
 <body class="body">
     <header class="header body__container">
-        <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee">
+        <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee" width="102" height="24">
+        <!-- Понимаю, что в макете логотип это просто шрифт, который используется во всём макете, но я логотип перевёл в svg специально, т.к. обычно так поступаю. За частую в лого уникальный шрифт из нейминга в бренд-буке и шаг вправо/влево считается побегом. Чтобы логотип не поломался при любом раскладе, сделал так -->
 
-        <label>
-            <img src="./img/icons/search-line.svg" alt="search">
-            <input type="search" id="search-line" placeholder="Search...">
+        <label class="header__search-label">
+            <img class="header__search-icon" src="./img/icons/search-line.svg" alt="search" width="17" height="17">
+            <input class="header__search-input" type="search" id="search-line" placeholder="Search...">
         </label>
 
         <nav class="header__navigation">
@@ -33,14 +34,16 @@
     </header>
 
     <main class="details">
-        <div class="body__container">
-            <img id="top" src="./img/image1-big.png" alt="Joyful John writes an article">
+        <div class="body__container body__container--details">
+            <img class="details__img" id="top" src="./img/image1-big.png" alt="Joyful John writes an article">
         </div>
 
         <div class="details__container">
-            <h1>Finibus Bonorum et Malorum</h1>
-            <p class="details__written">Written by John doe</p>
-            <time class="details__date" datetime="2020-05-20">Monday May 20</time>
+            <h1 class="details__title">Finibus Bonorum et Malorum</h1>
+            <div class="details__written-wrap">
+                <p class="details__written">Written by John doe</p>
+                <time class="details__date" datetime="2020-05-20">Monday May 20</time>
+            </div>
             <p class="details__text">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
                 "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
                 rem
@@ -77,9 +80,7 @@
                 resultant pleasure?"
             </p>
 
-            <span class="details__text--italic">
-                <strong>Section 1.10.33 of "de Finibus Bonorum et Malorum"</strong>
-            </span>
+            <strong class="details__text--italic-bold">Section 1.10.33 of "de Finibus Bonorum et Malorum"</strong>
 
             <p class="details__text">
                 "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -96,7 +97,7 @@
                 ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
             </p>
 
-            <h2>Section</h2>
+            <h2 class="details__second-title">Section</h2>
 
             <p class="details__text">
                 "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -113,7 +114,7 @@
                 ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
             </p>
 
-            <h2>Section 1.10.33</h2>
+            <h2 class="details__second-title">Section 1.10.33</h2>
 
             <p class="details__text">
                 "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -144,21 +145,23 @@
             </p>
 
         </div>
-        <a href="#top">
+        <a class="details__button" href="#top">
             <img src="./img/icons/arrow-down-circle-fill-2.svg" alt="Back to top">
         </a>
 
     </main>
 
-    <footer class="container footer">
-        <p>
-            <strong>hotcoffee</strong> 2020 copyright all rights reserved
-        </p>
-        <nav>
-            <a href="./blank.html" target="_blank"><img src="./img/icons/instagram-fill.svg" alt="instagram"></a>
-            <a href="./blank.html" target="_blank"><img src="./img/icons/twitter-fill.svg" alt="twitter"></a>
-            <a href="./blank.html" target="_blank"><img src="./img/icons/linkedin-box-fill.svg" alt="linkedin"></a>
-        </nav>
+    <footer class="footer">
+        <div class="body__container footer__container">
+            <p class="footer__copyright">
+                <strong>hotcoffee</strong> 2020 copyright all rights reserved
+            </p>
+            <nav class="footer__navigation">
+                <a href="./blank.html" target="_blank"><img src="./img/icons/instagram-fill.svg" alt="instagram"></a>
+                <a href="./blank.html" target="_blank"><img src="./img/icons/twitter-fill.svg" alt="twitter"></a>
+                <a href="./blank.html" target="_blank"><img src="./img/icons/linkedin-box-fill.svg" alt="linkedin"></a>
+            </nav>
+        </div>
     </footer>
 </body>
 

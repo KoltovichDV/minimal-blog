@@ -15,12 +15,12 @@
 
 <body class="body">
     <header class="header body__container">
-        <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee">
+        <img src="./img/Logo-HotCoffee.svg" alt="Logo-HotCoffee" width="102" height="24">
         <!-- Понимаю, что в макете логотип это просто шрифт, который используется во всём макете, но я логотип перевёл в svg специально, т.к. обычно так поступаю. За частую в лого уникальный шрифт из нейминга в бренд-буке и шаг вправо/влево считается побегом. Чтобы логотип не поломался при любом раскладе, сделал так -->
 
-        <label>
-            <img src="./img/icons/search-line.svg" alt="search">
-            <input type="search" id="search-line" placeholder="Search...">
+        <label class="header__search-label">
+            <img class="header__search-icon" src="./img/icons/search-line.svg" alt="search" width="17" height="17">
+            <input class="header__search-input" type="search" id="search-line" placeholder="Search...">
         </label>
 
         <nav class="header__navigation">
@@ -44,13 +44,14 @@
         </section>
 
         <section class="articles body__container">
-            <h2 id="articles">Articles</h2>
+            <h2 id="articles" class="visually-hidden">Articles</h2>
 
             <article class="articles__item articles__item--top">
-                <img src="./img/image1.png" alt="Joyful John writes an article">
-                <div class="articles__content-wrapper">
+                <img src="./img/image1.png" width="433" height="243" alt="Joyful John writes an article">
+                <div class="articles__content-wrapper articles__content-wrapper--top">
                     <h3 class="articles__title articles__title--top">long established</h3>
-                    <p class="articles__text">It is a long established fact that a reader will be distracted by the
+                    <p class="articles__text articles__text--top">It is a long established fact that a reader will be
+                        distracted by the
                         readable content of a page
                         when
                         looking at its layout. The point of using Lorem Ipsum is that....</p>
@@ -59,10 +60,55 @@
                 </div>
             </article>
 
-                <div class="articles__grid">
+            <div class="articles__grid">
 
+                <article class="articles__item">
+                    <img src="./img/image2.png" width="300" height="179" alt="Workplace of a journalist">
+                    <div class="articles__content-wrapper">
+                        <h3 class="articles__title">long established</h3>
+                        <p class="articles__text">It is a long established fact that a reader will be distracted by the
+                            readable content of a
+                            page
+                            when
+                            looking at its layout. The point of using Lorem Ipsum is that....</p>
+                        <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
+                        <a class="articles__link" href="./blank.html">Read more</a>
+                    </div>
+                </article>
+
+                <article class="articles__item">
+                    <img src="./img/image3.png" width="300" height="179" alt="Discussion by project staff">
+                    <div class="articles__content-wrapper">
+                        <h3 class="articles__title">long established</h3>
+                        <p class="articles__text">It is a long established fact that a reader will be distracted by the
+                            readable content of a
+                            page
+                            when
+                            looking at its layout. The point of using Lorem Ipsum is that....</p>
+                        <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
+                        <a class="articles__link" href="./blank.html">Read more</a>
+                    </div>
+
+                </article>
+
+                <article class="articles__item">
+                    <img src="./img/image4.png" alt="Work does not stop even in a cafe">
+                    <div class="articles__content-wrapper">
+                        <h3 class="articles__title">long established</h3>
+                        <p class="articles__text">It is a long established fact that a reader will be distracted by the
+                            readable content of a
+                            page
+                            when
+                            looking at its layout. The point of using Lorem Ipsum is that....</p>
+                        <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
+                        <a class="articles__link" href="./blank.html">Read more</a>
+                    </div>
+
+                </article>
+
+                <!-- в задании было условие, чтобы при добавлении новой карточки не развалился макет! Условие выполнено. Мы можем скопирвать и добавить код для новой карточки не развалив макет: 
                     <article class="articles__item">
-                        <img src="./img/image2.png" alt="Workplace of a journalist">
+                        <img src="./img/image4.png" alt="Work does not stop even in a cafe">
                         <div class="articles__content-wrapper">
                             <h3 class="articles__title">long established</h3>
                             <p class="articles__text">It is a long established fact that a reader will be distracted by the readable content of a
@@ -72,58 +118,26 @@
                             <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
                             <a class="articles__link" href="./blank.html">Read more</a>
                         </div>
-                    </article>
 
-                    <article class="articles__item">
-                        <img src="./img/image3.png" alt="Discussion by project staff">
-                        <h3 class="articles__title">long established</h3>
-                        <p class="articles__text">It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when
-                            looking at its layout. The point of using Lorem Ipsum is that....</p>
-                        <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
-                        <a class="articles__link" href="./blank.html">Read more</a>
-                    </article>
-
-                    <article class="articles__item">
-                        <img src="./img/image4.png" alt="Work does not stop even in a cafe">
-                        <h3 class="articles__title">long established</h3>
-                        <p class="articles__text">It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when
-                            looking at its layout. The point of using Lorem Ipsum is that....</p>
-                        <time class="articles__time" datetime="2020-05-20">May 20th 2020</time>
-                        <a class="articles__link" href="./blank.html">Read more</a>
-                    </article>
-
-                    <!-- в задании было условие, чтобы при добавлении новой карточки не развалился макет! Условие выполнено. Мы можем скопирвать и добавить код для новой карточки не развалив макет: 
-                    <article class="articles__item">
-                    <img src="./img/image4.png" alt="">
-                    <h3>long established</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is that....</p>
-                    <time datetime="2020-05-20">May 20th 2020</time>
-                    <a href="./blank.html">Read more</a>
                     </article> -->
+            </div>
+
+            <article class="articles__item articles__item--main">
+                <img src="./img/image5.png" alt="Workplace of a journalist">
+                <div class="articles__content-wrapper articles__content-wrapper--main">
+                    <h3 class="articles__title articles__title--main">What is Lorem Ipsum?</h3>
+                    <p class="articles__text articles__text--main">It is a long established fact that a reader will be
+                        distracted by the readable content of a page when looking at its layout. The point of using
+                        Lorem Ipsum is that it has a more-or-less normal distribution...</p>
+                    <time class="articles__time articles__time--main" datetime="2020-05-20">May 20</time>
+                    <a class="articles__link articles__link--main" href="./blank.html">Read more</a>
                 </div>
+            </article>
 
-                <article class="articles__item articles__item--main">
-                    <img src="./img/image5.png" alt="Workplace of a journalist">
-                    <div class="articles__content-wrapper">
-                        <h3>What is Lorem Ipsum?</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when
-                            looking at its layout. The point of using Lorem Ipsum is that....</p>
-                        <time datetime="2020-05-20">May 20th 2020</time>
-                        <a href="./blank.html">Read more</a>
-                    </div>
-                </article>
-
-                <button class="articles__more-button">
-                    See more
-                    <img src="./img/icons/arrow-down-circle-fill.svg" aria-hidden="true" alt="+">
-                </button>
+            <button class="articles__more-button">
+                See more
+                <img class="articles__more-button-icon" src="./img/icons/arrow-down-circle-fill.svg" aria-hidden="true" alt="+">
+            </button>
 
         </section>
 
@@ -131,7 +145,7 @@
 
     <footer class="footer">
         <div class="body__container footer__container">
-            <p>
+            <p class="footer__copyright">
                 <strong>hotcoffee</strong> 2020 copyright all rights reserved
             </p>
             <nav class="footer__navigation">
